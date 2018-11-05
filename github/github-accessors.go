@@ -6420,6 +6420,14 @@ func (p *ProjectCard) GetColumnURL() string {
 	return *p.ColumnURL
 }
 
+// GetProjectURL returns the ProjectURL field if it's non-nil, zero value otherwise.
+func (p *ProjectCard) GetProjectURL() string {
+	if p == nil || p.ProjectURL == nil {
+		return ""
+	}
+	return *p.ProjectURL
+}
+
 // GetContentURL returns the ContentURL field if it's non-nil, zero value otherwise.
 func (p *ProjectCard) GetContentURL() string {
 	if p == nil || p.ContentURL == nil {

@@ -285,6 +285,7 @@ func (s *ProjectsService) MoveProjectColumn(ctx context.Context, columnID int64,
 type ProjectCard struct {
 	URL        *string    `json:"url,omitempty"`
 	ColumnURL  *string    `json:"column_url,omitempty"`
+	ProjectURL *string    `json:"project_url,omitempty"`
 	ContentURL *string    `json:"content_url,omitempty"`
 	ID         *int64     `json:"id,omitempty"`
 	Note       *string    `json:"note,omitempty"`
