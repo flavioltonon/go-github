@@ -6580,14 +6580,6 @@ func (p *ProjectCard) GetColumnURL() string {
 	return *p.ColumnURL
 }
 
-// GetProjectURL returns the ProjectURL field if it's non-nil, zero value otherwise.
-func (p *ProjectCard) GetProjectURL() string {
-	if p == nil || p.ProjectURL == nil {
-		return ""
-	}
-	return *p.ProjectURL
-}
-
 // GetContentURL returns the ContentURL field if it's non-nil, zero value otherwise.
 func (p *ProjectCard) GetContentURL() string {
 	if p == nil || p.ContentURL == nil {
@@ -6802,14 +6794,6 @@ func (p *ProjectColumn) GetNodeID() string {
 		return ""
 	}
 	return *p.NodeID
-}
-
-// GetProjectURL returns the ProjectURL field if it's non-nil, zero value otherwise.
-func (p *ProjectColumn) GetProjectURL() string {
-	if p == nil || p.ProjectURL == nil {
-		return ""
-	}
-	return *p.ProjectURL
 }
 
 // GetUpdatedAt returns the UpdatedAt field if it's non-nil, zero value otherwise.
